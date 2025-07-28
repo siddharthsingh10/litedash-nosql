@@ -1,12 +1,12 @@
-# DocStore 📦
+# LiteDash NoSQL 📦
 
-[![PyPI version](https://badge.fury.io/py/docstore.svg)](https://badge.fury.io/py/docstore)
+[![PyPI version](https://badge.fury.io/py/litedash-nosql.svg)](https://badge.fury.io/py/litedash-nosql)
 [![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Tests](https://img.shields.io/badge/tests-29%20passed-brightgreen.svg)](https://github.com/docstore/docstore)
+[![Tests](https://img.shields.io/badge/tests-29%20passed-brightgreen.svg)](https://github.com/siddharthsingh10/litedash-nosql)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-A lightweight, document-based NoSQL database for Python. DocStore provides MongoDB-like functionality in a simple, fast, and flexible package. Perfect for prototyping, small applications, and learning NoSQL concepts.
+A lightweight, document-based NoSQL database for Python. LiteDash NoSQL provides MongoDB-like functionality in a simple, fast, and flexible package. Perfect for prototyping, small applications, and learning NoSQL concepts.
 
 ## ✨ Features
 
@@ -23,13 +23,13 @@ A lightweight, document-based NoSQL database for Python. DocStore provides Mongo
 ### Installation
 
 ```bash
-pip install docstore
+pip install litedash-nosql
 ```
 
 ### Python API
 
 ```python
-from docstore import Database
+from litedash import Database
 
 # Create a database
 db = Database("my_data")
@@ -59,22 +59,22 @@ print(f"Database has {stats['total_documents']} documents")
 
 ```bash
 # Create a database
-docstore create mydb
+litedash create mydb
 
 # Insert a document
-docstore insert mydb '{"name": "Alice", "age": 25}'
+litedash insert mydb '{"name": "Alice", "age": 25}'
 
 # Find documents
-docstore find mydb '{"age": {"$gte": 25}}'
+litedash find mydb '{"age": {"$gte": 25}}'
 
 # Get statistics
-docstore stats mydb
+litedash stats mydb
 
 # Create an index
-docstore index mydb email --unique
+litedash index mydb email --unique
 
 # Backup database
-docstore backup mydb backup_dir
+litedash backup mydb backup_dir
 ```
 
 ## 🔍 Query Language
@@ -178,8 +178,8 @@ python -m pytest tests/ --cov=docstore
 
 ```bash
 # Clone the repository
-git clone https://github.com/docstore/docstore.git
-cd docstore
+git clone https://github.com/siddharthsingh10/litedash-nosql.git
+cd litedash-nosql
 
 # Install in development mode
 pip install -e .
@@ -197,7 +197,7 @@ python -m pytest tests/ -v
 
 ## 📦 Package Information
 
-- **Name**: `docstore`
+- **Name**: `litedash-nosql`
 - **Version**: 1.0.0
 - **Python Support**: 3.8+
 - **License**: MIT
@@ -227,4 +227,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**DocStore** - Simple, Fast, Flexible Document Storage for Python 🚀 
+**LiteDash NoSQL** - Simple, Fast, Flexible Document Storage for Python 🚀 

@@ -1,5 +1,5 @@
 """
-Setup configuration for DocStore - A lightweight document-based NoSQL database.
+Setup configuration for LiteDash NoSQL - A lightweight document-based NoSQL database.
 """
 
 from setuptools import setup, find_packages
@@ -16,18 +16,18 @@ def read_requirements():
         return [line.strip() for line in fh if line.strip() and not line.startswith("#")]
 
 setup(
-    name="docstore",
+    name="litedash-nosql",
     version="1.0.0",
-    author="DocStore Team",
-    author_email="contact@docstore.dev",
+    author="LiteDash NoSQL Team",
+    author_email="contact@litedash.dev",
     description="A lightweight, document-based NoSQL database for Python",
     long_description=read_readme(),
     long_description_content_type="text/markdown",
-    url="https://github.com/docstore/docstore",
+    url="https://github.com/siddharthsingh10/litedash-nosql",
     project_urls={
-        "Bug Tracker": "https://github.com/docstore/docstore/issues",
-        "Documentation": "https://docstore.readthedocs.io",
-        "Source Code": "https://github.com/docstore/docstore",
+        "Bug Tracker": "https://github.com/siddharthsingh10/litedash-nosql/issues",
+        "Documentation": "https://litedash-nosql.readthedocs.io",
+        "Source Code": "https://github.com/siddharthsingh10/litedash-nosql",
     },
     packages=find_packages(),
     classifiers=[
@@ -74,7 +74,7 @@ setup(
     ],
     entry_points={
         "console_scripts": [
-            "docstore=docstore.cli:main",
+            "litedash=litedash.cli:main",
         ],
     },
     include_package_data=True,

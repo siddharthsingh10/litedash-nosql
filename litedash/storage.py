@@ -7,7 +7,7 @@ import json
 import os
 from pathlib import Path
 from typing import Dict, List, Optional, Any
-from docstore.document import Document
+from litedash.document import Document
 
 
 class Storage:

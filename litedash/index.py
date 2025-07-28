@@ -5,7 +5,7 @@ Provides fast lookups for frequently queried fields.
 
 from typing import Any, Dict, List, Optional, Set
 from collections import defaultdict
-from docstore.document import Document
+from litedash.document import Document
 
 
 class Index:

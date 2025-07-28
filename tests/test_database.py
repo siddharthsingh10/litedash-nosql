@@ -8,12 +8,12 @@ import shutil
 import os
 from datetime import datetime
 
-# Add docstore to path for imports
+# Add litedash to path for imports
 import sys
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
-from docstore.database import Database
-from docstore.document import Document
+from litedash.database import Database
+from litedash.document import Document
 
 
 class TestDatabase:

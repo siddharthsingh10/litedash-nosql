@@ -4,10 +4,10 @@ Orchestrates all components and provides the public API.
 """
 
 from typing import Any, Dict, List, Optional, Union
-from docstore.document import Document
-from docstore.storage import Storage
-from docstore.query import QueryEngine
-from docstore.index import IndexManager
+from litedash.document import Document
+from litedash.storage import Storage
+from litedash.query import QueryEngine
+from litedash.index import IndexManager
 
 
 class Database:

@@ -14,34 +14,34 @@ from .database import Database
 def main():
     """Main CLI entry point."""
     parser = argparse.ArgumentParser(
-        description="DocStore - A lightweight document-based NoSQL database",
+        description="LiteDash NoSQL - A lightweight document-based NoSQL database",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
   # Create a new database
-  docstore create mydb
+  litedash create mydb
 
   # Insert a document
-  docstore insert mydb '{"name": "Alice", "age": 25}'
+  litedash insert mydb '{"name": "Alice", "age": 25}'
 
   # Find documents
-  docstore find mydb '{"age": {"$gte": 25}}'
+  litedash find mydb '{"age": {"$gte": 25}}'
 
   # Get database stats
-  docstore stats mydb
+  litedash stats mydb
 
   # Create an index
-  docstore index mydb email --unique
+  litedash index mydb email --unique
 
   # Backup database
-  docstore backup mydb backup_dir
+  litedash backup mydb backup_dir
         """
     )
     
     parser.add_argument(
         "--version", 
         action="version", 
-        version="DocStore 1.0.0"
+        version="LiteDash NoSQL 1.0.0"
     )
     
     subparsers = parser.add_subparsers(dest="command", help="Available commands")
