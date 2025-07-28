@@ -1,0 +1,22 @@
+{
+  "_id": "bcbd6890-adb5-4fca-a9a1-77c8c300713d",
+  "data": {
+    "name": "Alice Johnson",
+    "email": "alice@example.com",
+    "age": 29,
+    "city": "New York",
+    "interests": [
+      "programming",
+      "music",
+      "travel"
+    ],
+    "profile": {
+      "bio": "Software developer",
+      "website": "https://alice.dev"
+    }
+  },
+  "metadata": {
+    "created_at": "2025-07-28T15:27:51.135711",
+    "updated_at": "2025-07-28T15:27:51.136986"
+  }
+}
